@@ -1,0 +1,42 @@
+@mixin displayFlex
+    display: flex
+    justify-content: center
+    align-items: center
+
+@mixin displayFlexStart
+    display: flex
+    justify-content: flex-start
+    align-items: center
+@mixin headerIcon
+    width: 62px
+    height: 53px
+    background-color: $whiteRGBA005
+@mixin headerLink
+    font-family: 'Varela Round'
+    font-weight: 400
+    font-size: 14px
+@mixin subNavLink
+    font-family: 'Bitter'
+    font-weight: 700
+@mixin banner
+    @include displayFlex
+    flex-direction: column
+    background-color: $white
+    font-family: 'Varela Round'
+    font-weight: 400
+    font-size: 14px
+    color: $darkGray
+@mixin VarelaRound
+    font-family: 'Varela Round'
+    font-weight: 400
+@mixin Bitter
+    font-family: 'Bitter'
+    font-weight: 400
+
+@mixin BitterBold
+    font-family: 'Bitter'
+    font-weight: 700
+
+@mixin marginAuto
+    margin-left: auto
+    margin-right: auto

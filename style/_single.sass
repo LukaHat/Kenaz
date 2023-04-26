@@ -1,0 +1,180 @@
+@import ./_variables
+@import ./_mixins
+.mainArticle
+    width: 940px
+    height: 588px
+    @include marginAuto
+    margin-top: 20px
+    background: url('/assets/article.png')
+    display: flex
+    align-items: flex-end
+    margin-bottom: -12px
+    .layer
+        width: 100%
+        height: 258px
+        background: linear-gradient(to top, $white 1%, $transparent 100%)
+        display: flex
+        align-items: flex-end
+        .singleText
+            height: 178px
+            width: 751px
+            margin-left: 30px
+            margin-top: 411px
+            .singleDate
+                @include VarelaRound
+                color: $nero
+                font-size: 12px
+                margin-bottom: 23px
+            .singleHeading
+                @include BitterBold
+                font-size: 44px
+                color: $nero
+.articleMainContent
+    margin-top: 20px
+    height: 951px
+    background-color: $white
+    width: 620px
+    @include Bitter
+    font-size: 14px
+    color: $charcoal
+    line-height: 22px
+    #articlePart1
+        height: 199px
+        margin: 36px 20px 42px 29px
+    #articlePart2
+        height: 177px
+        margin: 37px 7px 44px 30px
+    .articleLinks
+        margin-left: 15px
+        img
+            width: 600px
+.authorDescription
+    width: 620px
+    height: 219px
+    display: flex
+    flex-direction: column
+    background-color: $white
+    margin-top: 20px
+    h2
+        margin-left: 30px
+        @include BitterBold
+        font-size: 24px
+        color: $darkGreyBlue
+        margin-top: 16px
+        margin-bottom: 30px
+    .author
+        @include displayFlexStart
+        margin-left: 30px
+        @include VarelaRound
+        font-size: 13px
+        color: $charcoal
+        p
+            margin-left: 20px
+            margin-right: 27px
+            height: 100px
+.commentSection
+    background-color: $white
+    margin-top: 20px
+    .commentSectionHeading
+        margin-left: 30px
+        @include BitterBold
+        font-size: 24px
+        color: $darkGreyBlue
+        margin-top: 16px
+        margin-bottom: 30px
+    .comments
+        display: flex
+        flex-direction: column
+        margin-left: 30px
+        width: 590px
+        .comment
+            display: flex
+            margin-bottom: 46.5px
+            img
+                width: 57px
+                height: 58px
+            .commentText
+                margin-left: 15px
+                .commentHeading
+                    @include displayFlex
+                    justify-content: space-between
+                    flex-direction: row
+                    #time1
+                        margin-right: 202px
+                    #time2
+                        margin-right: 207px
+                    #time3
+                        margin-right: 187px
+                    .commentName
+                        @include Bitter
+                        font-size: 18px
+                        color: $purple
+                        line-height: 20px
+                    .commentTime
+                        @include VarelaRound
+                        font-size: 11px
+                        color: $gray-40
+                        line-height: 20px
+                        margin-top: 2.5px
+                    .reply
+                        @include VarelaRound
+                        font-size: 14px
+                        color: $purple
+                        text-align: right
+                        margin-right: 30px
+                .commentContent
+                    @include VarelaRound
+                    color: $charcoal
+                    font-size: 13px
+                    line-height: 20px
+                    width: 500px
+                    height: 60px
+                    overflow-x: hidden
+    .addComment
+        .addCommentHeading
+            margin-left: 30px
+            @include BitterBold
+            font-size: 24px
+            color: $darkGreyBlue
+            margin-top: 16px
+            margin-bottom: 30px
+        .addCommentText
+            @include VarelaRound
+            font-size: 13px
+            color: $charcoal
+            line-height: 20px
+            width: 569px
+            height: 60px
+            margin-left: 30px
+        .addCommentForm
+            margin-left: 30px
+            margin-top: 32px
+            input
+                background-color: $lighterGray
+                @include VarelaRound
+                font-size: 14px
+                color: $gray-40
+                padding-left: 18px
+                height: 40px
+                width: 282px
+                border: none
+                margin-bottom: 10px
+            textarea
+                background-color: $lighterGray
+                width: 542px
+                height: 173px
+                @include VarelaRound
+                font-size: 14px
+                color: $gray-40
+                padding-left: 18px
+                padding-top: 12px
+                border: none
+            #addCommentButton
+                cursor: pointer
+                width: 150px
+                height: 50px
+                background-color: $purple
+                @include displayFlex
+                padding-left: 0
+                color: $white
+                margin-top: 5px
